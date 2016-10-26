@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="button_main_1_3">심플 UI</string>
+
+    <string name="action_bar_main">메인</string>
+    <string name="title_activity_simple_ui">SimpleUIActivity</string>
+    <string name="title_activity_start_another_activity">Start Another Activity</string>
+    <string name="title_activity_empty">Empty View</string>
+
+    <string name="layout_simple_ui_text">https://developer.android.com/training/basics/firstapp/building-ui.html</string>
+    <string name="layout_start_another_activity_text">https://developer.android.com/training/basics/firstapp/starting-activity.html</string>
+
+    <string name="edit_text_hint_1_3">Edit text</string>
+    <string name="send">send</string>
+
+
+</resources>
