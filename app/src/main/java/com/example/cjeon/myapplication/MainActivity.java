@@ -74,4 +74,9 @@ public class MainActivity extends AppCompatActivity {
             startActivity(chooser);
         }
     }
+
+    public void button_6_3onClick(View view) {
+        Intent intent = new Intent(this, ResultActivity.class);
+        startActivity(intent);
+    }
 }

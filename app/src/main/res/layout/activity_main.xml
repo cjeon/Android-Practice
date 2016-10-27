@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,75 +8,84 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.cjeon.myapplication.MainActivity"
-    android:orientation="vertical"
-
     >
-
-    <Button
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/button_main_1_3"
-        android:onClick="button_1_3onClick"/>
+        android:orientation="vertical">
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/title_activity_start_another_activity"
-        android:onClick="button_1_4onClick"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_main_1_3"
+            android:onClick="button_1_3onClick"/>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/title_activity_orientation_sensitive_layout"
-        android:onClick="button_2_2onClick"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_activity_start_another_activity"
+            android:onClick="button_1_4onClick"/>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/title_activity_themes"
-        android:onClick="button_2_3onClick" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_activity_orientation_sensitive_layout"
+            android:onClick="button_2_2onClick"/>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/title_activity_lifecycle"
-        android:onClick="button_3_1onClick" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_activity_themes"
+            android:onClick="button_2_3onClick" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/title_activity_lifecycle2"
-        android:onClick="button_3_2onClick" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_activity_lifecycle"
+            android:onClick="button_3_1onClick" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/title_activity_fragment"
-        android:onClick="button_4_1onClick" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_activity_lifecycle2"
+            android:onClick="button_3_2onClick" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/title_internal_storage"
-        android:onClick="button_5_1onClick" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_activity_fragment"
+            android:onClick="button_4_1onClick" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/title_sqlite_database"
-        android:onClick="button_5_2onClick" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_internal_storage"
+            android:onClick="button_5_1onClick" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/title_another_activity"
-        android:onClick="button_6_1onClick" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_sqlite_database"
+            android:onClick="button_5_2onClick" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/title_app_chooser"
-        android:onClick="button_6_2onClick" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_another_activity"
+            android:onClick="button_6_1onClick" />
 
-</LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_app_chooser"
+            android:onClick="button_6_2onClick" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_result_activity"
+            android:onClick="button_6_3onClick" />
+
+    </LinearLayout>
+
+</ScrollView>

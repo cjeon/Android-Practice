@@ -46,10 +46,11 @@
             android:label="@string/title_activity_fragment" />
         <activity
             android:name=".InternalStorageActivity"
-            android:label="@string/title_internal_storage"/>
+            android:label="@string/title_internal_storage" />
         <activity
             android:name=".SQLiteActivity"
-            android:label="@string/title_sqlite_database"/>
+            android:label="@string/title_sqlite_database" />
+        <activity android:name=".ResultActivity"></activity>
     </application>
 
 </manifest>
