@@ -12,6 +12,7 @@
     <string name="title_activity_lifecycle2">Activity Lifecycle2</string>
     <string name="title_activity_fragment">Fragments</string>
     <string name="title_internal_storage">Internal Storage</string>
+    <string name="title_sqlite_database">SQLite Database</string>
 
     <string name="layout_simple_ui_text">https://developer.android.com/training/basics/firstapp/building-ui.html</string>
     <string name="layout_start_another_activity_text">https://developer.android.com/training/basics/firstapp/starting-activity.html</string>

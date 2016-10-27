@@ -44,7 +44,12 @@
         <activity
             android:name=".FragmentActivity"
             android:label="@string/title_activity_fragment" />
-        <activity android:name=".InternalStorageActivity"></activity>
+        <activity
+            android:name=".InternalStorageActivity"
+            android:label="@string/title_internal_storage"/>
+        <activity
+            android:name=".SQLiteActivity"
+            android:label="@string/title_sqlite_database"/>
     </application>
 
 </manifest>
