@@ -15,6 +15,14 @@ public class ResultActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
+
+        Intent intent = getIntent();
+        if (intent.getType() != null && intent.getType().equals("text/plain")) {
+            String text = intent.getStringExtra(Intent.EXTRA_TEXT);
+            TextView textView = (TextView) findViewById(R.id.text_6_3);
+            textView.setText(text);
+        }
+
     }
 
     public void pickNumber(View view) {
@@ -40,5 +48,11 @@ public class ResultActivity extends AppCompatActivity {
                 textView.setText(number);
             }
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        finish();
+        super.onBackPressed();
     }
 }
