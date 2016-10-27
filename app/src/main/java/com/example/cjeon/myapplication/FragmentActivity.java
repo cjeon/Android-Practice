@@ -1,16 +1,15 @@
 package com.example.cjeon.myapplication;
 import android.app.Activity;
 import android.app.FragmentTransaction;
+import android.graphics.Color;
 import android.os.Bundle;
-
 import android.view.View;
+import android.widget.TextView;
 
-public class FragmentActivity extends Activity {
+public class FragmentActivity extends Activity implements BlankFragment.OnClickListener{
     private int count = 0;
-    private static final int[] ids = new int[] {R.id.fragment_place_holder_0, R.id.fragment_place_holder_1,
-                                                R.id.fragment_place_holder_2, R.id.fragment_place_holder_3,
-                                                R.id.fragment_place_holder_4};
     public static final String COLOR_KEY = "color key";
+    private static final String[] colors = new String[] {"#ffb3ba", "#ffdfba", "#ffffba", "#baffc9", "#bae1ff"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,20 +21,14 @@ public class FragmentActivity extends Activity {
         FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
         fragmentTransaction.add(R.id.fragment_place_holder_0, new BlankFragment());
         fragmentTransaction.commit();
+    }
 
-
-//        BlankFragment blankFragment = new BlankFragment();
-//        Bundle bundle = new Bundle();
-//        bundle.putInt(COLOR_KEY, count);
-//        blankFragment.setArguments(bundle);
-//
-//        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-//        fragmentTransaction.add(0, blankFragment);
-//        fragmentTransaction.commit();
-//        if (count == 4) {count = 0;}
-//        else {count += 1;}
-
-
+    @Override
+    public void changeColor() {
+        count += 1;
+        count %= 5;
+        TextView textView = (TextView) findViewById(R.id.fragment_blank_body);
+        textView.setBackgroundColor(Color.parseColor(colors[count]));
 
     }
 }

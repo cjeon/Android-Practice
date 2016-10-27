@@ -7,39 +7,37 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
-public class BlankFragment extends Fragment {
-    private static final int[] colors = new int[] {0xffb3ba, 0xffdfba, 0xffffba, 0xbaffc9, 0xbae1ff};
-    OnHeadlineSelectedListener mCallback;
-
+public class BlankFragment extends Fragment implements View.OnClickListener {
+    OnClickListener mCallBack;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
-        // TODO: fix this.
-//        int color_key = getArguments().getInt(FragmentActivity.COLOR_KEY, 0);
-//        int color = colors[color_key];
         View view = inflater.inflate(R.layout.fragment_blank, container, false);
-//        TextView textView = (TextView) view.findViewById(R.id.fragment_blank_body);
-//        textView.setBackgroundColor(color);
+        view.setOnClickListener(this);
+        mCallBack = (OnClickListener) getActivity();
+
         return view;
     }
 
-    // Container Activity must implement this interface
-    public interface OnHeadlineSelectedListener {
-        public void onArticleSelected(int position);
+    @Override
+    public void onClick(View v) {
+        mCallBack.changeColor();
     }
 
     @Override
-    public void onAttach(Context context) {
+    public void onAttach(Context context){
         super.onAttach(context);
-
+        mCallBack = (OnClickListener) getActivity();
         try {
-            mCallback = (OnHeadlineSelectedListener) context;
-        } catch (ClassCastException e) {
-            throw new ClassCastException(context.toString()
-                    + " must implement OnHeadlineSelectedListener");
+            mCallBack = (OnClickListener) context;
+        } catch (ClassCastException e){
+            throw new ClassCastException(context.toString() + " must implement OnClickListener");
         }
+    }
+
+    public interface OnClickListener{
+        void changeColor();
     }
 
 }
