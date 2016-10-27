@@ -67,4 +67,16 @@
         android:text="@string/title_sqlite_database"
         android:onClick="button_5_2onClick" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_another_activity"
+        android:onClick="button_6_1onClick" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_app_chooser"
+        android:onClick="button_6_2onClick" />
+
 </LinearLayout>

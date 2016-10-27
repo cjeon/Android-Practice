@@ -1,6 +1,7 @@
 package com.example.cjeon.myapplication;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -56,5 +57,21 @@ public class MainActivity extends AppCompatActivity {
     public void button_5_2onClick(View view) {
         Intent intent = new Intent(this, SQLiteActivity.class);
         startActivity(intent);
+    }
+
+    public void button_6_1onClick(View view) {
+        Uri nineOneOne = Uri.parse("tel:911");
+        Intent intent = new Intent(Intent.ACTION_DIAL, nineOneOne);
+        startActivity(intent);
+    }
+
+    public void button_6_2onClick(View view) {
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setType("text/plain");
+        String title = "Hello I'm a chooser";
+        Intent chooser = Intent.createChooser(intent, title);
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(chooser);
+        }
     }
 }
