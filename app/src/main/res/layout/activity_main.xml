@@ -86,6 +86,12 @@
             android:text="@string/title_result_activity"
             android:onClick="button_6_3onClick" />
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_camera_activity"
+            android:onClick="button_6_3onClick" />
+
     </LinearLayout>
 
 </ScrollView>

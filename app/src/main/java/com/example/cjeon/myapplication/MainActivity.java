@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void button_6_3onClick(View view) {
-        Intent intent = new Intent(this, ResultActivity.class);
+        Intent intent = new Intent(this, CameraActivity.class);
         startActivity(intent);
     }
 }

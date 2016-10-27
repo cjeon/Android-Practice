@@ -3,6 +3,10 @@
     package="com.example.cjeon.myapplication">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera"
+                  android:required="true"/>
 
     <application
         android:allowBackup="true"
@@ -54,11 +58,14 @@
             android:name=".ResultActivity"
             android:label="@string/title_result_activity">
             <intent-filter>
-                <action android:name="android.intent.action.SEND"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-                <data android:mimeType="text/plain"/>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
             </intent-filter>
         </activity>
+        <activity android:name=".CameraActivity"></activity>
     </application>
 
 </manifest>
