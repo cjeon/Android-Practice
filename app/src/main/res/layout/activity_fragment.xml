@@ -1,58 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
+    android:id="@+id/activity_fragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.cjeon.myapplication.MainActivity"
-    android:orientation="vertical"
-
-    >
+    tools:context="com.example.cjeon.myapplication.FragmentActivity"
+    android:orientation="vertical">
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/button_main_1_3"
-        android:onClick="button_1_3onClick"/>
+        android:text="Get Fragment"
+        android:onClick="getFragment"/>
 
-    <Button
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/title_activity_start_another_activity"
-        android:onClick="button_1_4onClick"/>
+        android:id="@+id/fragment_place_holder_0"/>
 
-    <Button
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/title_activity_orientation_sensitive_layout"
-        android:onClick="button_2_2onClick"/>
+        android:id="@+id/fragment_place_holder_1"/>
 
-    <Button
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/title_activity_themes"
-        android:onClick="button_2_3onClick" />
+        android:id="@+id/fragment_place_holder_2"/>
 
-    <Button
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/title_activity_lifecycle"
-        android:onClick="button_3_1onClick" />
+        android:id="@+id/fragment_place_holder_3"/>
 
-    <Button
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/title_activity_lifecycle"
-        android:onClick="button_3_2onClick" />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/title_activity_fragment"
-        android:onClick="button_4_1onClick" />
+        android:id="@+id/fragment_place_holder_4"/>
 
 </LinearLayout>

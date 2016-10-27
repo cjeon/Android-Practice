@@ -42,4 +42,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ActivityLifeCycleActivity2.class);
         startActivity(intent);
     }
+
+    public void button_4_1onClick(View view) {
+        Intent intent = new Intent(this, FragmentActivity.class);
+        startActivity(intent);
+    }
 }

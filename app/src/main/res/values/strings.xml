@@ -10,6 +10,7 @@
     <string name="title_activity_themes">Different Themes</string>
     <string name="title_activity_lifecycle">Activity Lifecycle</string>
     <string name="title_activity_lifecycle2">Activity Lifecycle2</string>
+    <string name="title_activity_fragment">Fragments</string>
 
     <string name="layout_simple_ui_text">https://developer.android.com/training/basics/firstapp/building-ui.html</string>
     <string name="layout_start_another_activity_text">https://developer.android.com/training/basics/firstapp/starting-activity.html</string>
@@ -19,6 +20,5 @@
     <string name="send">send</string>
     <string name="portrait">portrait</string>
     <string name="landscape">landscape</string>
-
 
 </resources>
