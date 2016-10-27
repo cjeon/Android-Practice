@@ -47,4 +47,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, FragmentActivity.class);
         startActivity(intent);
     }
+
+    public void button_5_1onClick(View view) {
+        Intent intent = new Intent(this, InternalStorageActivity.class);
+        startActivity(intent);
+    }
 }
